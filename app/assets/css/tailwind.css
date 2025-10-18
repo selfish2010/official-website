@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义工具类 */
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+  .gradient-blue {
+    background: linear-gradient(135deg, #2563EB 0%, #4F46E5 100%);
+  }
+}

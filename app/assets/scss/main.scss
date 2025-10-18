@@ -1,0 +1,107 @@
+.section-title {
+    position     : relative;
+    padding-left : 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow     : hidden;
+
+    &::before {
+        content         : '';
+        position        : absolute;
+        left            : 0;
+        top             : 50%;
+        transform       : translateY(-50%);
+        width           : 5px;
+        height          : 90%;
+        background-color: var(--bs-info);
+        border-radius   : 2px;
+    }
+
+    h2 {
+        font-size  : 2rem;
+        font-weight: 600;
+        margin     : 0;
+    }
+
+    h6 {
+        font-weight: 500;
+        margin     : .5rem 0 0 0;
+        color      : var(--bs-secondary);
+    }
+}
+
+.sub-page {
+    dl {
+        margin: 0 0 2rem 0;
+
+        dt {
+            font-weight: 500;
+            margin     : 1rem 0;
+            font-size  : 1.25rem;
+        }
+
+        dd {
+            ul {
+                margin: 0;
+
+                li {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+.case-qrcode {
+    img {
+        max-width: 150px;
+    }
+}
+
+.common-card {
+    height          : 100%;
+    background-color: #ffffff;
+    padding         : 1.5rem;
+    transition      : all 0.3s ease;
+    border          : 1px solid #dee2e6;
+}
+
+.normal-ul {
+    padding-left: 1rem;
+
+    li {
+        list-style-type: circle;
+    }
+}
+
+.list-unstyled {
+    padding-left: 0 !important;
+
+    li {
+        list-style-type: none !important;
+        display        : flex;
+        align-items    : center;
+
+        .iconfont {
+            margin-right: .5rem;
+            font-size   : 1.25rem;
+            font-weight : 600;
+
+        }
+    }
+
+    &.wbefore {
+        li {
+            .iconfont {
+                color: var(--bs-danger);
+            }
+        }
+    }
+
+    &.wafter {
+        li {
+            .iconfont {
+                color: var(--bs-success);
+            }
+        }
+    }
+}

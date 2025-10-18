@@ -1,0 +1,32 @@
+// 定义与 Bootstrap 变量对应的自定义 CSS 变量
+@import 'bootstrap/dist/css/bootstrap-utilities.css';
+
+// :root {
+//   --primary: #2563eb;
+//   --secondary: #10b981;
+//   --success: #10b981;
+//   --danger: #ef4444;
+//   --warning: #f59e0b;
+//   --info: #3b82f6;
+//   --light: #f9fafb;
+//   --dark: #111827;
+// }
+
+// 自定义工具类
+.text-primary-custom {
+  color: var(--primary);
+}
+
+.bg-primary-custom {
+  background-color: var(--primary);
+}
+
+// 卡片悬停效果
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
